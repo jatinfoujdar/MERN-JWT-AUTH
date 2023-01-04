@@ -1,5 +1,5 @@
 const express = require("express")
-
+const workoutSchema = require("../schema/workSchema")
 const router = express.Router()
 
 
@@ -11,8 +11,15 @@ router.get("/:id",(req,res)=>{
     req.send("get single workout")
 })
 
-router.post("/",(req,res)=>{
-    res.send("post a new workout")
+router.post("/", async (req,res)=>{
+    const {title , load,reps} = req.body
+
+    try {
+        const workout = await workoutSchema.create({title , load,reps})
+    res.status(200).json(workout)
+    } catch (error) {
+       res.send(400).json({error:error.message})
+    }
 })
 
 router.delete("/:id",(req,res)=>{
