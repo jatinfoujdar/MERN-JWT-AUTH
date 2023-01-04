@@ -1,5 +1,5 @@
 {
-  "name": "mern-jwt-auth",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -7,15 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jatinfoujdar/Mern-JWT-Auth.git"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jatinfoujdar/Mern-JWT-Auth/issues"
-  },
-  "homepage": "https://github.com/jatinfoujdar/Mern-JWT-Auth#readme"
+  "license": "ISC"
 }
