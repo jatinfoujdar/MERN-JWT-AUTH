@@ -1,5 +1,5 @@
 const workoutSchema = require("../schema/workSchema")
-
+const mongoose = require("mongoose")
 //get all workout
 const getWorkouts = async(req,res)=>{
     const workouts = await workoutSchema.find({}).sort({createdAt: -1})
@@ -10,6 +10,10 @@ const getWorkouts = async(req,res)=>{
 //get a single workout
 const getWorkout = async(req,res)=>{
     const {id} = req.params
+
+    if(!mongoose.Types.ObjectId.isValid(id)){
+        return res.status(404).json({error:error.message})
+    }
 
     const workout = await workoutSchema.findById(id)
 
