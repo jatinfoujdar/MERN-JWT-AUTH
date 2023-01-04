@@ -1,11 +1,11 @@
 require("dotenv").config()
 const ConnectToDB = require("./config/db.js")
 const express = require("express");
-const app = express();
+
 const workoutRoutes = require("./routes/workoutRoute")
 
 
-
+const app = express();
 
 
 app.use(express.json())
