@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+
 
 //  components
 import WorkoutDetails from "../components/WorkoutDetails"
@@ -10,6 +11,7 @@ const Home = () => {
   useEffect(() => {
     const fetchWorkouts = async () => {
       const response = await fetch('/api/workouts')
+      console.log(response);
       const json = await response.json()
 
       if (response.ok) {
