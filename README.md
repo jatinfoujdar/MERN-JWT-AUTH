@@ -17,7 +17,10 @@
 
 `npm install` to install all the dependencies.
 
-`npm run dev` to start the backend and frontend concurrently.
+`npm run dev` to start the backend 
+
+`npm start` to start frontend concurrently
+
 
 # img
 ![app](./1.png)
