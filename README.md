@@ -1,7 +1,7 @@
 # Mern-JWT-Auth
 
 
-#Tech Stack
+# Tech Stack
 
     Reactjs
     Nodejs
