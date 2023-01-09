@@ -12,8 +12,7 @@
 
 - Clone the repository
 - Go to the project directory and run the following commands
-
-`add` mongodb url to connect with backend (.env)
+- add mongodb url to connect with backend (.env)
 
 `npm install` to install all the dependencies.
 
