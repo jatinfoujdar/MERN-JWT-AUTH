@@ -19,5 +19,5 @@
 
 `npm run dev` to start the backend and frontend concurrently.
 
-#img
+# img
 ![app](./1.png)
